@@ -4,7 +4,7 @@ function Order() {
     return(
         <>
                 <Header/>
-        <h1>salomlar</h1>
+        <h1>salom</h1>
         </>
     )
 }
