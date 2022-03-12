@@ -1,0 +1,1322 @@
+/*TODO headering-top start */
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.header-tops{
+    text-align: center;
+}
+.header-top-left{
+    display: flex;
+    max-width: 351px;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.header-top-navLink{
+    margin-right: 30px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #5D6C7B;
+    text-decoration: none;
+}
+.modal-hamburger-media{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-top: 40px;
+    right: 3.3px;
+    z-index: 1000;
+    top: 50px;
+    display: none;
+}
+.header-top-padding{
+    margin-right: 30px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #5D6C7B;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header-top-left-ItemLeft-img{
+    margin-right: 10px;
+}
+.header-top-left-ItemLeft{
+    margin-top: 3.5px;
+}
+.header-top-right-tel{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: #282739;
+    text-decoration: none;
+}
+.modal-tel-zakaz-close{
+    padding-right: 0px;
+}
+.modal-tel-zakaz-title{
+    display: flex;
+    justify-content: space-between;
+
+}
+.modal-tel-zakaz{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    margin: 0 auto;
+    top: -1000px;
+    left: 0;
+    right: 0;
+    max-width: 890px;
+    width: 100%;
+    padding-left: 40px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    z-index: 100;
+    transition: 2s ;
+}
+.modal-tel-zakaz-close{
+    font-size: 50px;
+    cursor: pointer;
+    color: #5D6C7B;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.modal-tel-zakaz-left-heading{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #282739;
+    margin-top: 40px;
+}
+.modal-tel-zakaz-right{
+    margin-top: 30px;    
+    margin-right: 70px;
+}
+.modal-tel-zakaz-left{
+    max-width: 375px;
+    width: 100%;
+    margin-right: 70px;
+}
+.modal-tel-zakaz-right-img{
+    margin-bottom: -4px;
+}
+.modal-tel-zakaz-left-padding{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #282739;
+    padding-bottom: 25px;
+    }
+
+
+.modal-tel-zakaz-left-input{
+    background: #FFFFFF;
+    border: 2px solid #EAEBED;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 15px 15px 52px;
+    outline: #EAEBED;
+    margin-bottom: 20px;
+}
+.modal-from{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-tel-zakaz-left-btn{
+    background: #6F73EE;
+    border-radius: 5px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 3px solid transparent;
+    cursor: pointer;
+    padding: 15px 79px;
+}
+.modal-tel-zakaz-left-btn:active{
+    background: #FFFFFF;
+    border: 3px solid #6F73EE;
+    color: #6F73EE;
+}
+.modal-tel-zakaz-left-padding-a{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 14px;
+    color: #282739;
+}
+.overlay{
+    display: none;
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2A5275;
+    opacity: 0.7;
+    z-index: 1;
+    cursor: pointer;
+}
+.overlay-white{
+    display: none;
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.headering{
+    position: absolute;
+    width: 100%;
+    height: 0.1px;
+    left: 0;
+    right: 0;
+    background-color: #969fa7;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*TODO headering-top end */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* TODO headring-center start */
+.header-center{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-center-left{
+    text-align: center;
+    display: flex;
+}
+.header-center-logo{
+    margin-right: 7px;
+}
+.header-center-button{
+    margin-right: 20px;
+    border: 3px solid transparent;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.header-center-search-input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 500px;
+    position: relative;
+    top: -5px;
+    border: 2px solid #0E1821;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: transparent;
+}
+.header-center-search-button{
+    padding-top: 10px;
+    padding-bottom: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+    border : 3px solid transparent;
+    background-color: #0E1821;
+    cursor: pointer;
+    color: white;
+}
+.header-center-right-img{
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.header-center-right-img2{
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+.header-center-right-img1{
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.header-center-right-padding{
+    margin-left: 10px;
+    margin-bottom: -5px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #282739;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.modal-catalog{
+    position: fixed;
+    left: 180px;
+    top: 190px;
+    z-index: 10000;
+    background: #EDF2F6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(196, 196, 196);
+    display: flex;
+    flex-direction: column;
+}
+.modal-catalog-list-left{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    /* padding: 10px; */
+
+    padding-right: 100px;
+}
+.modal-catalog{
+    display: none;
+}
+.modal-catalog-list-item-left{
+    display: flex;
+    padding-left: 10px;
+    width: 100%;
+    list-style-type: none;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #282739;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.modal-catalog-list-item-left:hover{
+    background-color: #DAE4ED;
+}
+.modal-catalog-list-item-active{
+    list-style-type: none;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #282739;
+    margin-bottom: 15px;
+
+}
+.modal-catalog-list-item{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5D6C7B;
+    margin-bottom: 10px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.modal-catalog-list-item:hover{
+    color: #282739;
+}
+.modal-tel-zakaz-close-catalog{
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    bottom: 35px;
+}
+.header-center-button-close{
+    margin-right: 20px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color:white;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    border: transparent;
+    margin-top: -10px;
+    transition: 1s;
+    margin-left: 4px;
+}
+.modal-korzinka{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px rgb(196, 196, 196);
+    margin: 0px;
+    padding: 0px;
+    max-width: 300px;
+    margin-left: 1000px;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+}
+.modal-korzinka-top{
+    
+    display: flex;
+    justify-content: space-around;
+    background: #F4F7FB;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal-korzinka-top-left-padding{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #282739;
+}
+.modal-korzinka-top-left-padding2{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5D6C7B;
+    margin-top: 18px;
+}
+.modal-korzinka-center-item{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    cursor: pointer;
+    z-index: -1;
+}
+.modal-korzinka-center{
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    height: 200px;
+}
+.modal-korzinka-center-item-img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.modal-korzinka-center-left{
+    margin: 0;
+    padding: 0;
+}
+.modal-korzinka-center-left-center{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-korzinka-center-left-padding{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #282739;
+}
+.modal-korzinka-center-left-center-padding{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #282739;
+}
+.modal-korzinka-center-left-center-span{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #282739;
+}
+.modal-korzinka-center-left-center-img{
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.modal-korzinka-bottom{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.modal-korzinka-bottom-btn{
+    height: 37px;
+    width: 150px;
+    background: #6F73EE;
+    border-radius: 5px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 3px solid transparent;
+    cursor: pointer;
+    margin-top: 11px;
+    margin-bottom: 28px;
+}
+.modal-korzinka-bottom-btn:active{
+    background: #FFFFFF;
+    color: #6F73EE;
+    border: 3px solid #6F73EE;
+}.modal-korzinka-bottom-left-padding{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #5D6C7B;
+}
+.modal-korzinka-bottom-left-padding2{
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #282739;
+
+}
+.modal-korzinka-bottom-left{
+    margin-top: 11px;
+}
+.header-center-right-imgClose{
+    display: none;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.header-center-right-paddingClose{
+    display: none;
+    margin-left: 10px;
+    margin-bottom: -5px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #282739;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+/* TODO headering-center end */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* TODO headering-bottom start */
+.header-bottom-item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.header-bottom-item-list{
+    display: flex;
+    list-style-type: none;
+}
+.header-bottom-item-list{
+    text-decoration: none;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.header-bottom-item-list-check{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #6F73EE;
+    border-radius: 300px;
+    padding: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+    height: 15px;
+}
+.header-bottom-item-list-img{
+    margin-left: 5px;
+}
+.header-bottom{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    right: 0;
+    background-color: #0E1821;
+    z-index: -1;
+    top: 128px;
+}
+.header-bottom-item-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 60px;
+}
+.header-bottom-item-list-media{
+    display: block;
+}
+.header-bottom-item-lists{
+    border-bottom: 1px solid #EAEBED;
+    width: 100%;
+    display: flex ;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #282739;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.header-bottom-item-list-checks{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #6F73EE;
+    border-radius: 300px;
+    padding: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.media-header{
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.header-center-media-btn{
+    margin-top: 10px;
+}
+.header-center-media-btn-img{
+    margin-left: 35px;
+    margin-top: -20px;
+}
+.header-center-media-btn-imgClose{
+    display: none;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.header-center-media-btn-imgCloses{
+    display: none;
+    margin-right: 15px;
+    margin-left : 280px;
+}
+.media-header-reklama{
+    display: none;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.headering-media-reklama{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 0.1px;
+    left: 0;
+    right: 0;
+    background-color: #f3f3f3;
+}
+.media-header-reklama-lefts{
+    display: flex;
+    margin: 0 ;
+    padding: 0;
+}
+.media-header-reklama-left-padding{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #282739;
+    margin-left: 10px;
+}
+.media-header-reklama-left-imgs-padding{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 12px;
+    color: #5D6C7B;
+    margin-left: 10px;
+}
+.media-header-reklama-left-imgs{
+    margin-left: 10px;
+}
+.media-header-reklama-btn{
+    background: #6F73EE;
+    border-radius: 5px;
+    border: 3px solid transparent;
+}
+.media-header-reklama-btn-atribut{
+    text-decoration: none;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.nav {  
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #2A5275;
+    display: none;
+    overflow-x: auto;
+    box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px -4px 8px rgba(96, 97, 112, 0.16);
+    z-index: 10000;
+}
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+/* TODO headering-bottom end */
+@media only screen and (max-width : 1093px){
+    .header-center-media-btn-imgCloses{
+        display: block;
+
+    }
+    .media-header-reklama{
+        display: flex;
+    }
+    .headering-media-reklama{
+        display: block;
+    }
+    .media-header{
+        display: flex;
+    }
+    .nav{
+        display: flex;
+    }
+    .header-top{
+        display: none;
+    }
+    .header-center{
+        display: none;
+    }
+    .headering{
+        display: none;
+    }
+    .header-bottom{
+        display: none;
+    }
+    .header-bottom-item{
+        display: none;
+    }
+    .modal-korzinka{
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px rgb(196, 196, 196);
+        margin: 0px;
+        padding: 0px;
+        max-width: 300px;
+        margin-left: 480px;
+        margin-top: 90px;
+        border-radius: 5px;
+        display: none;
+        z-index: 100;
+    }
+}
+@media only screen and (max-width : 934px){
+    .modal-tel-zakaz-right-img{
+        display: none;
+    }
+    .modal-tel-zakaz{
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        margin:  0 auto;
+    }
+    .modal-catalog {
+        top: 100px;
+        left: 210px;
+        position: fixed;
+        /* right: 580px; */
+        width: 500px;
+        z-index: 100;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+    .modal-korzinka{
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px rgb(196, 196, 196);
+        margin: 0px;
+        padding: 0px;
+        max-width: 300px;
+        margin-left: 340px;
+        margin-top: 90px;
+        border-radius: 5px;
+        display: none;
+        z-index: 100;
+    }
+}
+@media only screen and (max-width : 666px){
+    .modal-korzinka{
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px rgb(196, 196, 196);
+        margin: 0px;
+        padding: 0px;
+        max-width: 300px;
+        margin-left: 170px;
+        margin-top: 90px;
+        border-radius: 5px;
+        display: none;
+        z-index: 100;
+    }
+    .modal-tel-zakaz-right-img{
+        display: none;
+    }
+    .modal-tel-zakaz{
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        margin:  0 auto;
+        margin-top: -80px;
+    }
+    .modal-tel-zakaz-left {
+        max-width: 575px;
+        width: 100%;
+        margin: 0;
+        margin-left: 50px;
+    }
+    .modal-tel-zakaz-close{
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .modal-catalog {
+        top: 130px;
+        left: 100px;
+        position: fixed;
+        /* right: 580px; */
+        width: 300px;
+        z-index: 100;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+        flex-direction: column;
+    }
+    .modal-catalog-list-center{
+      position: absolute;
+      background-color: white;
+      left: 200px;
+      bottom: 200px;
+      width: 150px;        
+      box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+    .modal-catalog-list-right{
+        position: absolute;
+        background-color: white;
+        left: 200px;
+        top: 100px;
+        width: 150px;        
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+}
+@media only screen and (max-width : 666px){
+    .modal-tel-zakaz-right-img{
+        display: none;
+    }
+    .modal-tel-zakaz{
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        margin:  0 auto;
+        margin-top: -80px;
+    }
+    .modal-tel-zakaz-left {
+        max-width: 575px;
+        width: 100%;
+        margin: 0;
+        margin-left: 50px;
+    }
+    .modal-tel-zakaz-close{
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .modal-catalog {
+        top: 130px;
+        left: 100px;
+        position: fixed;
+        /* right: 580px; */
+        width: 300px;
+        z-index: 100;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+        flex-direction: column;
+    }
+    .modal-catalog-list-center{
+      position: absolute;
+      background-color: white;
+      left: 200px;
+      bottom: 200px;
+      width: 150px;        
+      box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+    .modal-catalog-list-right{
+        position: absolute;
+        background-color: white;
+        left: 200px;
+        top: 100px;
+        width: 150px;        
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+}
+@media only screen and (max-width : 442px){
+    .modal-korzinka{
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px rgb(196, 196, 196);
+        margin: 0px;
+        padding: 0px;
+        max-width: 300px;
+        margin-left: 45px;
+        margin-top: 260px;
+        border-radius: 5px;
+        display: none;
+        z-index: 100;
+    }
+    .modal-catalog {
+        top: 330px;
+        left: 50px;
+        position: fixed;
+        /* right: 580px; */
+        width: 300px;
+        z-index: 100;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+        flex-direction: column;
+    }
+    .modal-catalog-list-center{
+        display: none;
+      position: absolute;
+      background-color: white;
+      left: 210px;
+      bottom: 200px;
+      width: 120px;        
+      box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+    .modal-catalog-list-right{
+        display: none;
+        position: absolute;
+        background-color: white;
+        left: 200px;
+        top: 100px;
+        width: 130px;        
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+    .modal-tel-zakaz-right-img{
+        display: none;
+    }
+    .modal-tel-zakaz{
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        margin:  0 auto;
+        margin-top: -80px;
+    }
+    .modal-tel-zakaz-left {
+        max-width: 475px;
+        width: 100%;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .modal-tel-zakaz-close{
+        margin-left: -80px;
+        font-size: 30px;
+    }
+    .modal-tel-zakaz-left-btn{
+        padding: 5px;
+    }
+    .modal-tel-zakaz-left-heading{
+        font-size: 20px;
+    }
+}
+.header-center-btn{
+    cursor: pointer;
+    border: 3px solid transparent;
+    background: #2A5275;
+    border-radius: 4px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 26px;
+    padding-right: 26px;
+    transition: 0.5s;
+}
+.header-center-btn:hover{
+    cursor: pointer;
+    border: 3px solid #2A5275;
+    background: white;
+    border-radius: 4px;
+    color: #2A5275;
+
+}
+@media only screen and (max-width : 431px){
+    
+    .modal-korzinka{
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px rgb(196, 196, 196);
+        margin: 0px;
+        padding: 0px;
+        max-width: 300px;
+        margin-left: 35px;
+        margin-top: 230px;
+        border-radius: 5px;
+        display: none;
+        z-index: 100;
+    }
+    .modal-catalog {
+        top: 10px;
+        left: 32px;
+        position: fixed;
+        /* right: 580px; */
+        width: 300px;
+        z-index: 100;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+        flex-direction: column;
+    }
+    .modal-catalog-list-center{
+        display: none;
+      position: absolute;
+      background-color: white;
+      left: 210px;
+      bottom: 200px;
+      width: 120px;        
+      box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+    .modal-catalog-list-right{
+        display: none;
+        position: absolute;
+        background-color: white;
+        left: 200px;
+        top: 100px;
+        width: 130px;        
+        box-shadow: 0px 0px 5px 0px rgb(196 196 196);
+    }
+    .modal-tel-zakaz-right-img{
+        display: none;
+    }
+    .modal-tel-zakaz{
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        margin:  0 auto;
+        margin-top: -80px;
+    }
+    .modal-tel-zakaz-left {
+        max-width: 475px;
+        width: 100%;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .modal-tel-zakaz-close{
+        margin-left: -80px;
+        font-size: 30px;
+    }
+    .modal-tel-zakaz-left-btn{
+        padding: 5px;
+    }
+    .modal-tel-zakaz-left-heading{
+        font-size: 20px;
+    }
+}
+.modal-catalog-list-item-left-img{
+    margin-right: 10px;
+    margin-top: -5px;
+}
+.header-center-media-top{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-hamburger-media-padding{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    color: #070C11;
+    margin-left: 30px;
+}
+.header-center-right-media{
+    margin-left: 120px;
+}
+.modal-auth{
+    display: none;
+    border-radius: 8px;
+    z-index: 10000;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 370px;
+    top: 100px;
+    margin: 0 auto;
+}
+.modal-auth-top{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    background: #EDF2F6;
+    padding: 15px;
+}
+.modal-auth-top-padding{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #070C11;
+}
+.modal-auth-top-close{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color:  #F15152;
+    font-size: 32px;
+}
+.modal-auth-center{
+    padding: 30px;
+}
+.modal-auth-center-padding{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #070C11;
+    padding-bottom: 8px;
+}
+.modal-auth-center-input{
+    width: 310px;
+    height: 48px;
+    border: 1px solid #EAEAF0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: gray;
+    margin-bottom: 20px;
+}
+.modal-auth-center-input2{
+    width: 310px;
+    height: 48px;
+    border: 1px solid #EAEAF0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: gray;
+    margin-bottom: 10px;
+}
+.password_reload{
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #4878A6;
+    cursor: pointer;
+    margin-bottom: 26px;
+}
+.password_btn{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding: 16px 132px ;
+    cursor: pointer;
+    background: #2A5275;
+    border-radius: 4px;
+    border: 3px solid transparent;
+}
+.password_btn:hover{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #2A5275;
+    padding: 16px 132px ;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 3px solid #2A5275;
+}
+.password_register{
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #4878A6;
+}
+.modal-auth-register{
+    display: none;
+    border-radius: 8px;
+    z-index: 10000;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0.1px;
+    width: 370px;
+    margin: 0 auto;
+    bottom: 50px;
+    height: 600px;
+    top: 50px;
+}.password_btns{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding: 16px 72px ;
+    cursor: pointer;
+    background: #2A5275;
+    border-radius: 4px;
+    border: 3px solid transparent;
+
+}
+@media only screen and (max-width : 431px){
+    .modal-auth-register{
+        display: none;
+        border-radius: 8px;
+        z-index: 10000;
+        background-color: white;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0.1px;
+        width: 370px;
+        margin: 0 auto;
+        bottom: 50px;
+        height: 600px;
+        top: 5px;
+    }
+}
