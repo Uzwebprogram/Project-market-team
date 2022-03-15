@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+import { StatusCode } from "react-http-status-code";
 import vieber from "./../../Assets/Img/vieber.svg";
 import whatsapp from "./../../Assets/Img/whatsapp.svg";
 import telegram from "./../../Assets/Img/telegram.svg";
@@ -33,6 +34,9 @@ import catalog_8 from "./../../Assets/Img/catalog_8.svg";
 import catalog_9 from "./../../Assets/Img/catalog_9.svg";
 import catalog_10 from "./../../Assets/Img/catalog_10.svg";
 import catalog_11 from "./../../Assets/Img/catalog_11.svg";
+import sign from "./../../Assets/Img/sign.svg"
+import { useLogin } from "../../Context/Auth";
+import checkGif from "./../../Assets/Img/check.gif";
 // import imgsamkat from "https://voronezh.electrotown/.ru/image/cache/catalog/i/ol/of/df70218593955545eda8e789ba2915ba-700x700.jpg"
 import { useEffect, useRef, useState } from "react";
 function Header() {
@@ -49,6 +53,100 @@ function Header() {
   const FooterNav = useRef();
   const ModalForm = useRef()
   const ModalFormRegister = useRef()
+  const errorLogin = useRef()
+  const [ email, setEmail ] = useState("")
+  const [ password, setPassword ] = useState("")
+  const [registName , setRegistName] = useState("")
+  const [registPassword , setRegistPassword] = useState("")
+  const [registTel , setregistTel] = useState("")
+  const [registEmail, setregistEmail] =useState("")
+  const [ token, setToken ] = useLogin()
+  const [btnDisabled , setbtnDisabled] = useState(false)
+  const signModal = useRef()
+  const signs = useRef()
+  const mediaSigns = useRef()
+  const mediaLogin =useRef()
+  const SearchInput = useRef()
+  const btnLogin = useRef()
+  const loginFormOks = useRef()
+  const errorRegister = useRef()
+  const handleSubmit = async e => {
+    e.preventDefault()
+
+    try {
+        const res = await fetch('http://localhost:8000/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                tel : email,
+                email, 
+                password
+            })
+        })
+          if (res.status == 401) {
+            errorLogin.current.style.display = "block"
+          }else{
+            errorLogin.current.style.display = "none"
+            ModalForm.current.style.display = "none"
+            loginFormOks.current.style.display = "block"
+          }
+        const data = await res.json()
+        setToken(data?.accsesToken)
+
+    } catch(err) {
+        console.log(err)
+    }
+    
+    if (e.status == 401) {
+      console.log("ok");
+    }
+
+
+
+}
+
+const RegisterSubmit = async e => {
+  e.preventDefault()
+
+try {
+  const res = await fetch('http://localhost:8000/registar', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          name : registName,
+          email: registEmail, 
+          tel : registTel,
+          password : registPassword,
+      })
+  })
+    if (res.status == 400) {
+      errorRegister.current.style.display = "block"
+    }else{
+      errorLogin.current.style.display = "none"
+      ModalForm.current.style.display = "none"
+    }
+  const data = await res.json()
+  setToken(data?.accsesToken)
+} catch(err) {
+  console.log(err)
+}
+}
+useEffect(()=>{
+  if (token) {  
+    btnLogin.current.style.display = "none"
+    signs.current.style.display = "flex"
+    signs.current.style.position = "absolute"
+    signs.current.style.top = "68px"
+    signs.current.style.right = "325px"
+    mediaLogin.current.style.display = "none"
+    mediaSigns.current.style.display ="block"
+    SearchInput.current.style.marginLeft = "150px"
+  }
+},[token])
   return (
     <>
       <header className="header">
@@ -114,7 +212,8 @@ function Header() {
           <hr className="headering" />
           <nav className="header-center">
             <div className="header-center-left">
-              <img
+                  <NavLink to={"/"}>
+                  <img
                 className="header-center-logo"
                 src={Logo}
                 width={180}
@@ -122,24 +221,28 @@ function Header() {
                 alt={Logo}
               />
 
+                  </NavLink>
               <form>
-                <input
-                  className="header-center-search-input"
-                  placeholder="Искать самокат KUGO"
-                  type="text"
+                <input ref={SearchInput} className="header-center-search-input"  placeholder="Искать самокат KUGO" type="text"
                 />
                 <button className="header-center-search-button">
                   <img src={search} width={16} height={16} alt={search} />
                 </button>
               </form>
             </div>
-            <div className="header-center-top">
-              <button className="header-center-btn" onClick={()=>{
+            <div  ref={btnLogin} className="header-center-top">
+              <button  className="header-center-btn"  onClick={()=>{
                               ModalForm.current.style.display = "block"
                               overlays.current.style.display = "block"
+                              
                             }}>Войти</button>
             </div>
             <div className="header-center-right">
+              
+            <img src={sign} ref={signs} className="header-center-right-img3" onClick={()=>{
+                overlayWhite.current.style.display = "block"
+                signModal.current.style.display = "block"
+            }} width={48} height={48} alt={sign} />
             <NavLink to={"/Compare"}>
             <img
                 className="header-center-right-img2"
@@ -180,6 +283,19 @@ function Header() {
               </span>
             </div>
           </nav>
+          <div className="modal-sign" ref={signModal}>
+                  <ul className="modal-sign-top-list">
+                    <li className="modal-sign-top-list-item">Общие сведения</li>
+                    <li className="modal-sign-top-list-item">Личные данные</li>
+                    <li className="modal-sign-top-list-item">История покупок</li>
+                    <li className="modal-sign-top-list-item">Избранное</li>
+                    <li className="modal-sign-top-list-item">Сменить пароль</li>
+                  </ul>
+                <div className="modal-sign-bottom">
+                </div>
+                <p className="modal-sign-bottom-padding"
+                onDoubleClick={() => setToken(null)}>Выйти</p>
+          </div>
           <div className="modal-korzinka" ref={overlaykorzinka}>
             <div className="modal-korzinka-top">
               <p className="modal-korzinka-top-left-padding">В вашей корзине</p>
@@ -376,6 +492,10 @@ function Header() {
               </button>
             </div>
           </div>
+          <div ref={loginFormOks} className="loginFormOk">
+            <p className="loginFormOk-padding">Account confirmed</p>
+          <img className="loginFormOk-img" src={checkGif} width={100} height={100} alt="" />
+          </div>
           <div className="modal-catalog" ref={modalCatalog}>
           <img
                               className="header-center-media-btn-imgCloses"
@@ -505,14 +625,15 @@ function Header() {
                               overlays.current.style.display = "none"
                             }}>&times;</p>
                       </div>
-                        <form className="modal-auth-center">  
+                        <form className="modal-auth-center" onSubmit={handleSubmit}>  
                           <div className="modal-auth-center-top">
                             <p className="modal-auth-center-padding">Эл. почта или телефон</p>
-                            <input className="modal-auth-center-input" type="text" placeholder="Эл. почта или телефон"  required />
+                            <input className="modal-auth-center-input" onKeyUp={e => setEmail(e.target.value)} type="text" placeholder="Эл. почта или телефон"  required />
                             <div className="modal-auth-center-bottom">
-                            <p className="modal-auth-center-padding">Пароль</p>
-                            <input className="modal-auth-center-input2"  type="password" placeholder="Пароль" />
+                            <p className="modal-auth-center-padding" >Пароль</p>
+                            <input className="modal-auth-center-input2"  type="password" placeholder="Пароль" onKeyUp={e => setPassword(e.target.value)}/>
                             </div>
+                            <p className="modal-auth-error" ref={errorLogin}>Незарегистрированный пользователь</p>
                             <p className="password_reload">Забыли пароль?</p>
                             <button className="password_btn">Войти</button>
                             <p className="password_register" onClick={()=>{
@@ -534,20 +655,29 @@ function Header() {
                               overlays.current.style.display = "none"
                             }}>&times;</p>
                       </div>
-                        <form className="modal-auth-center">  
+                        <form className="modal-auth-center" onSubmit={RegisterSubmit}>  
                           <div className="modal-auth-center-top">
                             <p className="modal-auth-center-padding">Имя</p>
-                            <input className="modal-auth-center-input" type="text" placeholder="Имя"  required />
+                            <input className="modal-auth-center-input" type="text" placeholder="Имя" onKeyUp={e =>{
+                              setRegistName(e.target.value)
+                            }}  required />
                             <p className="modal-auth-center-padding">Эл.почта</p>
-                            <input className="modal-auth-center-input" type="email" placeholder="Эл.почта"  required />
+                            <input className="modal-auth-center-input" type="email" placeholder="Эл.почта"  onKeyUp={e =>{
+                              setregistEmail(e.target.value)
+                            }} required />
                             <div className="modal-auth-center-bottom">
                             <p className="modal-auth-center-padding">Номер телефона</p>
-                            <input className="modal-auth-center-input" type="number" placeholder="Номер телефона"  required />
+                            <input className="modal-auth-center-input" type="number" placeholder="Номер телефона"   onKeyUp={e =>{
+                              setregistTel(e.target.value)
+                            }}   required />
                             <p className="modal-auth-center-padding">Пароль</p>
-                            <input className="modal-auth-center-input2"  type="password" placeholder="Пароль" />
+                            <input className="modal-auth-center-input2"  type="password" placeholder="Пароль"  onKeyUp={e =>{
+                              setRegistPassword(e.target.value)
+                            }} />
                             </div>
+                            <p className="password-regist-padding" ref={errorRegister}>Эта информация сохраняется!</p>
                             <p className="password_reload">Забыли пароль?</p>
-                            <button className="password_btns">Зарегистрироваться</button>
+                            <button className="password_btns" type="submit">Зарегистрироваться</button>
                             <p className="password_register" onClick={()=>{
                                     ModalFormRegister.current.style.display="none"
                                     ModalForm.current.style.display = "block"
@@ -624,7 +754,11 @@ function Header() {
               height={40}
               alt={Logo}
             />
-             <button className="header-center-btn" onClick={()=>{
+                         <img src={sign} ref={mediaSigns} className="header-center-right-img4" onClick={()=>{
+                overlayWhite.current.style.display = "block"
+                signModal.current.style.display = "block"
+            }} width={48} height={48} alt={sign} />
+             <button ref={mediaLogin} className="header-center-btns" onClick={()=>{
                               ModalForm.current.style.display = "block"
                               overlays.current.style.display = "block"
                             }}>Войти</button>
@@ -707,7 +841,7 @@ function Header() {
               </div>
               <div className="header-center-right-media">
               <img
-                className="header-center-right-img"
+                className="header-center-right-img5"
                 src={taroz}
                 width={20}
                 height={20}
@@ -888,7 +1022,8 @@ function Header() {
           overlays.current.style.display = "none";
           hamburgerMedia.current.style.display = "none";
           ModalForm.current.style.display = "none";
-          ModalFormRegister.current.style.display="none"
+          ModalFormRegister.current.style.display="none";
+          loginFormOks.current.style.display = "none"
         }}
       ></div>
       <div
@@ -901,6 +1036,8 @@ function Header() {
           modalCloseBtn.current.style.display = "none";
           overlaykorzinka.current.style.display = "none";
           hamburgerMedia.current.style.display = "none";
+          signModal.current.style.display = "none";
+          
         }}
       ></div>
     </>

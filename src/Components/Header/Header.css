@@ -271,6 +271,15 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: 10px;
     cursor: pointer;
 }
+.header-center-right-img5{
+    position: relative;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
 .header-center-right-img2{
     width: 30px;
     height: 30px;
@@ -759,6 +768,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 /* TODO headering-bottom end */
 @media only screen and (max-width : 1093px){
+    .header-center-right-img4{
+        display: none;
+    }
     .header-center-media-btn-imgCloses{
         display: block;
 
@@ -805,7 +817,25 @@ input[type="number"]::-webkit-outer-spin-button {
         z-index: 100;
     }
 }
+.loginFormOks4{
+    display: none;
+}
 @media only screen and (max-width : 934px){
+    .loginFormOks{
+        display: none;
+    }
+    .loginFormOks4{
+        display: none;
+        position: fixed;
+        top: 160px;
+        width: 250px;
+        height: 250px;
+        z-index: 1000;
+        background-color: white;
+        text-align: center;
+        border-radius: 5px;
+        left: 100px;
+    }
     .modal-tel-zakaz-right-img{
         display: none;
     }
@@ -1031,6 +1061,23 @@ input[type="number"]::-webkit-outer-spin-button {
         font-size: 20px;
     }
 }
+.header-center-btns{
+    cursor: pointer;
+    border: 3px solid transparent;
+    background: #2A5275;
+    border-radius: 4px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 26px;
+    padding-right: 26px;
+    transition: 0.5s;
+}
 .header-center-btn{
     cursor: pointer;
     border: 3px solid transparent;
@@ -1055,6 +1102,13 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 4px;
     color: #2A5275;
 
+}
+.password-regist-padding{
+    display: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    color: red;
 }
 @media only screen and (max-width : 431px){
     
@@ -1148,7 +1202,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-left: 30px;
 }
 .header-center-right-media{
-    margin-left: 120px;
+    margin-left: 140px;
 }
 .modal-auth{
     display: none;
@@ -1285,7 +1339,7 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 370px;
     margin: 0 auto;
     bottom: 50px;
-    height: 600px;
+    height: 630px;
     top: 50px;
 }.password_btns{
     margin: 0;
@@ -1318,5 +1372,175 @@ input[type="number"]::-webkit-outer-spin-button {
         bottom: 50px;
         height: 600px;
         top: 5px;
+    }
+}
+.modal-auth-error{
+    display: none;
+    color: red;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.header-center-right-img3{
+    position: absolute;
+    display: none;
+    width: 38px;
+    height: 38px;
+    margin-left: 25px;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+.modal-sign{
+    z-index: 10000;
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 334px;
+    background-color: white;
+    right: 330px;
+    box-shadow: 0px 0px 5px 1px rgb(202, 202, 202);
+    border-radius: 4px 4px 8px 8px;
+}
+.modal-sign-top-list-item{
+    width: 100%;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #070C11;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    cursor: pointer;
+    list-style-type: none;
+}
+.modal-sign-top-list{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.modal-sign-top-list-item:hover{
+    background-color:#6697c165;
+    transition: 0.5s;
+}
+.modal-sign-bottom{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+}
+.modal-sign-bottom-padding{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F15152;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.loginFormOk{
+    display: none;
+    position: fixed;
+    left: 620px;
+    right: 0;
+    top: 250px;
+    width: 250px;
+    height: 250px;
+    z-index: 1000;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.loginFormOk-padding{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 50px;
+    line-height: 19px;
+    color: #51f171;
+    cursor: pointer;
+}
+@media only screen and (max-width : 1050px){
+    .loginFormOk{
+        position:fixed;
+        left: 350px;
+    }
+    .modal-sign{
+        z-index: 10000;
+        display: none;
+        position: absolute;
+        left: 650px;
+        top: 100px;
+    }
+}
+@media only screen and (max-width : 768px){
+    .modal-sign{
+        z-index: 10000;
+        display: none;
+        position: absolute;
+        left: 450px;
+        top: 100px;
+    }
+}
+@media only screen and (max-width : 650px){
+    .loginFormOk{
+        position:fixed;
+        left: 200px;
+    }
+    .modal-sign{
+        z-index: 10000;
+        display: none;
+        position: absolute;
+        left: 300px;
+        top: 100px;
+    }
+}
+@media only screen and (max-width : 500px){
+    .modal-sign{
+        z-index: 10000;
+        display: none;
+        position: absolute;
+        left: 200px;
+        top: 100px;
+    }
+}
+@media only screen and (max-width : 450px){
+    .loginFormOk{
+        position:fixed;
+        left: 100px;
+    }
+    .modal-sign{
+        z-index: 10000;
+        display: none;
+        position: absolute;
+        left: 140px;
+        top: 100px;
+    }
+}
+@media only screen and (max-width : 392px){
+    .modal-sign{
+        z-index: 10000;
+        display: none;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+}
+@media only screen and (max-width : 376px){
+    .loginFormOk{
+        position:fixed;
+        left: 50px;
+    }
+    .modal-sign{
+        z-index: 10000;
+        display: none;
+        position: absolute;
+        left: 50px;
+        top: 100px;
     }
 }
