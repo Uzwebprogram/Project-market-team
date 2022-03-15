@@ -5,6 +5,7 @@ function Main() {
         <>
         <Header/>
         <h1>Mains</h1>
+        <h2>salom</h2>
         </>
     )
 }
