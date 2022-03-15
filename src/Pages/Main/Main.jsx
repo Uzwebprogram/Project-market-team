@@ -4,7 +4,7 @@ function Main() {
     return(
         <>
         <Header/>
-        <h1>Main</h1>
+
         <h2>salomlar bo'lsin</h2>
         </>
     )
