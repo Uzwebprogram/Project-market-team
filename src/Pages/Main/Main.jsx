@@ -4,8 +4,10 @@ function Main() {
     return(
         <>
         <Header/>
-        <h1>Mains</h1>
         <h2>salom</h2>
+
+        <h1>Main</h1>
+
         </>
     )
 }
