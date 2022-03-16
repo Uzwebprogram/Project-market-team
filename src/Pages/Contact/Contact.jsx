@@ -4,7 +4,7 @@ function Contact() {
     return(
         <>
                 <Header/>
-        <h1>Contact</h1>
+        <h1>concatlar edi</h1>
         </>
     )
 }
