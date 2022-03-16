@@ -5,7 +5,7 @@ function Katalog() {
         
         <section className='c-katolog'>
         <h1>Katalog</h1>
-        <h2>slom</h2>
+        <h2>slosvgsgsgm</h2>
         </section>
     )
 }
