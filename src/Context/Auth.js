@@ -9,7 +9,7 @@ const LoginProvider = ({children})=>{
         if(!localStorage.getItem('token') && token){
             window.localStorage.setItem('token', token)
         }
-    },[token])
+    },[token] )
 
     const value = {
         token,
@@ -27,7 +27,7 @@ const LoginProvider = ({children})=>{
     )
 }
 
-const useLogin = (setterOnly) =>{
+const useLogin = (setterOnly) => {
     const { token, setToken } = useContext(Context)
     return setterOnly ? [setToken] : [token,setToken]
 }
