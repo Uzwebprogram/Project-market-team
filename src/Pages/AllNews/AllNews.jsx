@@ -11,12 +11,13 @@ function AllNews() {
         <section className="c-allnews">
             <div className="container">
                 <div className="c-news-div">
+                    <h2 className='c-news-div-title'>Новости</h2>
                     <ul className="c-news-list">
                         {
                             allnewsData.map(elem => (
                                 <li className="c-news-item">
                                     <div className="c-news-img-box">
-                                        <img src={elem.imgUrl}  width='150' height='190' alt="image" />
+                                        <img className='c-news-img-box-img' src={elem.imgUrl}  width='150' alt="image" />
                                     </div>
                                     <div className="c-news-info-box">
                                         <h3 className='c-news-title'>{elem.title}</h3>
