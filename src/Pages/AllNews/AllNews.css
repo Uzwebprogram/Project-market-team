@@ -1,3 +1,6 @@
+.c-allnews{
+  padding: 0 0 60px 0;
+}
 .c-news-div{
     width: 100%;
 }
@@ -26,7 +29,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #EDF2F6;
     padding-left: 20px;
@@ -81,4 +84,101 @@
     font-size: 14px;
     font-weight: 500;
     margin: 0;
+}
+
+
+
+/* ! media */
+
+@media only screen and (max-width: 1090px) {
+    .c-news-list{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .c-news-list > li{
+        width: 80%;
+    }
+    .c-news-list > li > .c-news-item-link{
+        width: 100%;
+    }
+    .c-news-div-title{
+        margin: 30px 0 20px 115px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-news-div-title{
+        margin: 30px 0 20px 83px;
+    }
+  .c-news-list > li{
+        width: 90%;
+    }
+    .c-news-title{
+        color: #070C11;
+        font-size: 21px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 22px;
+        font-family: 'Montserrat', 'Roboto', 'Exo+2', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .c-news-div-title{
+        margin: 30px 0 20px 40px;
+        font-size: 28px;
+    }
+  .c-news-list > li{
+        width: 90%;
+        height: 100%;
+    }
+    .c-news-list > li > .c-news-item-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .c-news-title{
+        color: #070C11;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 22px;
+        font-family: 'Montserrat', 'Roboto', 'Exo+2', sans-serif;
+    }
+    .c-news-img-box{
+        width: 100%;
+        margin: 0;
+        height: 180px;
+    }
+    .c-news-img-box-img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    .c-news-info-box{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .c-news-title{
+        color: #070C11;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 22px;
+        font-family: 'Montserrat', 'Roboto', 'Exo+2', sans-serif;
+    }
+    .c-news-text{
+        font-size: 12px;
+    }
+    .c-news-div-title{
+        margin: 30px 0 20px 20px;
+        font-size: 24px;
+    }
 }
