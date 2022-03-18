@@ -6,15 +6,19 @@
     width: 100%;
     padding: 0;
 }
-.c-news-list > li{
+.c-news-list > li {
     width: 40%;
-    height: 190px;
+    height: 239px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px 0;
     background: #EDF2F6;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
 }
 .c-news-img-box{
