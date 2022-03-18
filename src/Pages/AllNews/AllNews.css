@@ -50,7 +50,7 @@
     flex-direction: column;
     height: 190px;
 }
-.c-news-list > li >  .c-news-item-link > h3, p, span{
+.c-news-list > li > .c-news-item-link > h3, p, span{
     font-family: 'Montserrat', 'Roboto', 'Exo+2', sans-serif;
 }
 .c-news-title{
