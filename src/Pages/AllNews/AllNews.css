@@ -18,8 +18,13 @@
     width: 100%;
     padding: 0;
 }
+<<<<<<< HEAD
 .c-news-list > li{
-    width: 42%;
+    width: 40%;
+=======
+.c-news-list > li {
+    width: 40%;
+>>>>>>> 844ed2b2c7b56df2ae60c6dee4796253a4af47a3
     height: 239px;
     display: flex;
     justify-content: center;
