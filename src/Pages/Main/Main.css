@@ -3,6 +3,7 @@
     max-width: 970px;
     height: 508px;
     border-radius: 8px;
+    margin-bottom: 80px;
 }
 @media only screen and (max-width : 716px){
     .carsuel-img{
@@ -23,5 +24,354 @@
         max-width: 366px;
         margin:  0 auto;
         height: 198px;
+    }
+}
+.as-top-product-list-item-padding{
+        margin: 0;
+        padding: 0;
+        margin-left: 150px;
+        width: 122px;
+        height: 31px;
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #FFFFFF;
+        background: #D73838;
+        border-radius: 4px;
+        padding: 5px;
+}
+.as-top-product-list{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.as-top-product-list-item{
+    border: 1px solid rgb(209, 209, 209);
+    width: 316px;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+.as-top-product-list-item-padding2{
+    margin: 0;
+    padding: 0;
+    margin-left: 174px;
+    width: 98px;
+    height: 31px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    background: #48A69B;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.as-top-product-list-item-padding1{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #838688;
+}
+.as-top-product-list-item-title{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #070C11;
+    margin-bottom: 20px;
+}
+.as-top-product-list-item-center{
+    width: 180px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.as-top-product-list-item-center-message{
+    margin: 0 ;
+    padding: 0;
+    margin-left: 5px;
+    margin-top: -7px;
+}
+.as-top-product-list-item-center-message-span{
+    margin: 0 ;
+    padding: 0;
+    position: relative;
+    bottom: 4px;
+    margin-left: 5px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #070C11;
+}
+.as-top-product-list-item-sum{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #070C11;
+}
+.as-top-product-list-item-aksiya{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration-line: line-through;
+    color: #838688;
+}
+.as-top-product-list-item-center-bottom-left-paddings{
+    padding-top: 3px;
+    display: flex;
+    background-color: #F37748;
+    width: 117px;
+    height: 24px;
+    border-radius: 14px;
+    padding-left: 10px;
+}
+.as-top-product-list-item-center-bottom-left-padding-foiz{
+    padding-left: 4px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #070C11;
+    background: #FFFFFF;
+    border-radius: 23px;
+    height: 18px;
+    width: 37px;
+    margin-right: 5px;    
+}
+.as-top-product-list-item-center-bottom-left-padding-minus{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+
+}
+.as-top-product-list-item-center-bottoms{
+    display: flex;
+    justify-content: space-between;
+
+}
+.as-top-product-list-item-center-bottom-button{
+    background-color: white;
+    border: 1px solid #C8CACB;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.as-top-product-list-item-center-bottom-buttons{
+    position: relative;
+    bottom: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.as-top-product-list-item-center-bottom-zakaz-button{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #4878A6;
+    padding: 15px 48px ;
+    border: 1px solid #4878A6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+}
+.as-top-product-list-item-center-bottom-zakaz-button2{
+    padding:12px 14px;
+    margin-left: 3px;
+    border:1px solid transparent;
+    background: #4878A6;
+    border-radius: 4px;
+        
+}
+.as-top-product-heading{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #070C11;
+}
+.as-top-product-about{
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.as-top-product-Navlink{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #2A5275;
+    margin-top: 20px;
+    margin-right: 70px;
+}
+.as-top-product-list-item:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px gray;
+    transition: 0.3s;
+}
+.main-center-reklama-left{
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    background: #EDF2F6;
+    border-radius: 8px;
+}
+.main-center-reklama-right{
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    background: #EDF2F6;
+    border-radius: 8px;
+}
+.main-center-news-left{
+    padding: 10px;
+    width: 640px;
+    background: #EDF2F6;
+    border-radius: 8px;
+}
+.main-center-news-right{
+    padding: 10px;
+    width: 640px;
+    background: #EDF2F6;
+    border-radius: 8px;
+}
+.main-center-news-right:hover{
+    color: #2A5275;
+    cursor: pointer;
+}
+.main-center-news-left:hover{
+    color: #2A5275;
+    cursor: pointer;
+}
+.main-center-reklama{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.main-center-reklama-right{
+    display: flex;
+}
+.main-center-reklama-heading{
+    padding-top: 50px;
+    padding-bottom: 62px;
+    padding-left: 50px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #070C11;
+    width: 274px;
+
+}
+.main-center-reklama-img{
+    margin-top: 5px;
+    padding-top: 4px;
+    padding-right: 30px;
+}
+@media only screen and (max-width : 934px){
+    .main-center-reklama{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width : 560px){
+    .as-top-product-about{
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .main-center-news-heading1{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        width: 200px;
+        color: #070C11;
+    }
+    .as-top-product-heading{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        color: #070C11;
+        margin-top: 10px;
+    }
+    .main-center-reklama{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .main-center-news-left{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .main-center-reklama-heading{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        width: 200px;
+        color: #070C11;
+    }
+    .main-center-reklama-img{
+        width: 131px;
+        height: 132px;
+    }
+    .main-center-reklama-right{
+        display: flex;
+    }
+    .main-center-reklama-left{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        
+        margin-bottom: 20px;
+    }
+    .main-center-reklama-right{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+    .main-center-news-right{
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+
     }
 }
