@@ -1,0 +1,126 @@
+/*  */
+
+.compare_container{
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.compare_Navbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.compare_Link {
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-right: 38px;
+    color: #070C11;
+
+}
+
+.compare_LinkInner {
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #838688;
+}
+
+.compare_heading {
+    color: #070C11;
+    font-family: "Exo 2";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    margin-bottom: 10px;
+}
+
+.compare_cardWrapper {
+    margin: 0;
+    display: flex;
+}
+
+/* pagination buttons*/ 
+.compare_pagination {
+    margin: 0;
+    display: flex;
+    align-items:center;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.compare_prevBtn {
+    display: block;
+    padding: 18px 20px;
+    border-radius: 50%;
+    transform:rotate(180deg);
+    border:none;
+    background-color: #EDF2F6;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.compare_nextBtn {
+    display: block;
+    padding: 18px 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #EDF2F6;
+}
+
+/**all products select option */
+.compare_products {
+    padding: 13px 134px 13px 20px;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    border: 1px solid #EAEAF0;
+    border-radius: 4px;
+    margin-bottom: 22px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    
+}
+
+.compare_check {
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+
+}
+
+#check {
+    margin-right: 12px;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+
+}
+
+/**cards */
+.cards {
+    display: flex;
+}
+
+.cards__item {
+    border: 1px solid grey;
+}
+
+.cards__delete {
+    background-color: transparent;
+    border: none;
+    display: block;
+    color:red;
+    margin: 0 auto;
+}
+
+
