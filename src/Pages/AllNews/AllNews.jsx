@@ -31,7 +31,6 @@ function AllNews() {
   const fetchComments = async (currentPage) => {
     const res = await fetch(
       `http://localhost:4000/allNewsData?_page=${currentPage}&_limit=${limit}`
-      // `https://jsonplaceholder.typicode.com/comments?_page=${currentPage}&_limit=${limit}`
     );
     const data = await res.json();
     return data;
