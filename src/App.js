@@ -14,6 +14,7 @@ import Favorites from './Pages/Favorites/Favorites';
 import Compare from './Pages/Compare/Compare';
 import Katalog from './Pages/Katalog/Katalog';
 import AllNews from './Pages/AllNews/AllNews'
+import NewsId from './Pages/NewsId/NewsId';
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
       <Route path='/Cooperation' element={<Cooperation/>}/>
       <Route path='/katalog' element={<Katalog/>}/>
       <Route path='/allnews' element={<AllNews/>}/>
+      <Route path='/newsId/:id' element={<NewsId/>}/>
     </Routes>
     </>
   );
