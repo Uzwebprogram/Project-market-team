@@ -16,7 +16,6 @@ function AllNews() {
     const getComments = async () => {
       const res = await fetch(
         `http://localhost:4000/allNewsData?_page=1&_limit=${limit}`
-        // `https://jsonplaceholder.typicode.com/comments?_page=1&_limit=${limit}`
       );
       const data = await res.json();
       const total = res.headers.get("x-total-count");
