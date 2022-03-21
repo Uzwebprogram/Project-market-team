@@ -255,10 +255,13 @@ input[type="number"]::-webkit-outer-spin-button {
     outline: transparent;
 }
 .header-center-search-button{
-    padding-top: 10px;
-    padding-bottom: 4px;
+    position: relative;
+    bottom: 5px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px ;
+
     border : 3px solid transparent;
     background-color: #0E1821;
     cursor: pointer;
@@ -294,6 +297,8 @@ input[type="number"]::-webkit-outer-spin-button {
     cursor: pointer;
 }
 .header-center-right-padding{
+    position: relative;
+    top: 5px;
     margin-left: 10px;
     margin-bottom: -5px;
     font-family: "Jost";
@@ -308,7 +313,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .modal-catalog{
-    position: fixed;
+    position: absolute;
     left: 180px;
     top: 190px;
     z-index: 10000;
@@ -574,7 +579,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .header-bottom-item{
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 .header-bottom-item-list{
     display: flex;
@@ -601,7 +606,7 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 4px;
     text-decoration: none;
     margin-left: 10px;
-    height: 15px;
+    height: 20px;
 }
 .header-bottom-item-list-img{
     margin-left: 5px;
@@ -658,7 +663,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: none;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .header-center-media-btn{
     margin-top: 10px;
@@ -725,8 +730,11 @@ input[type="number"]::-webkit-outer-spin-button {
     background: #6F73EE;
     border-radius: 5px;
     border: 3px solid transparent;
+    height: 30px;
 }
 .media-header-reklama-btn-atribut{
+    position: relative;
+    bottom: 3px;
     text-decoration: none;
     font-family: "Jost";
     font-style: normal;
@@ -751,6 +759,9 @@ input[type="number"]::-webkit-outer-spin-button {
     z-index: 10000;
 }
 .nav__link {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1202,7 +1213,12 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-left: 30px;
 }
 .header-center-right-media{
-    margin-left: 140px;
+    margin-left: 110px;
+}
+.nav__text_nav{
+    color: white;
+    list-style-type: none;
+    text-decoration: white;
 }
 .modal-auth{
     display: none;
@@ -1388,7 +1404,6 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 38px;
     margin-left: 25px;
     position: relative;
-    top: 8px;
     cursor: pointer;
 }
 .modal-sign{
@@ -1512,13 +1527,13 @@ input[type="number"]::-webkit-outer-spin-button {
 @media only screen and (max-width : 450px){
     .loginFormOk{
         position:fixed;
-        left: 100px;
+        left: 60px;
     }
     .modal-sign{
         z-index: 10000;
         display: none;
         position: absolute;
-        left: 140px;
+        left: 100px;
         top: 100px;
     }
 }
