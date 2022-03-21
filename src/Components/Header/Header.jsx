@@ -74,7 +74,7 @@ function Header() {
     e.preventDefault()
 
     try {
-        const res = await fetch('http://localhost:8000/login', {
+        const res = await fetch('https://project-market-authrization.herokuapp.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ const RegisterSubmit = async e => {
   e.preventDefault()
 
 try {
-  const res = await fetch('http://localhost:8000/registar', {
+  const res = await fetch('https://project-market-authrization.herokuapp.com/registar', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
@@ -135,13 +135,20 @@ try {
   console.log(err)
 }
 }
+<<<<<<< HEAD
+=======
+const handleLogOut = () =>{
+  window.localStorage.removeItem("token")
+}
+>>>>>>> 7dc570f165a34e1e40a740b94bb7a90016f8ae21
 
 useEffect(()=>{
+
   if (token) {  
     btnLogin.current.style.display = "none"
     signs.current.style.display = "flex"
     signs.current.style.position = "absolute"
-    signs.current.style.top = "68px"
+    signs.current.style.top = "72px"
     signs.current.style.right = "325px"
     mediaLogin.current.style.display = "none"
     mediaSigns.current.style.display ="block"
@@ -243,7 +250,7 @@ useEffect(()=>{
             <img src={sign} ref={signs} className="header-center-right-img3" onClick={()=>{
                 overlayWhite.current.style.display = "block"
                 signModal.current.style.display = "block"
-            }} width={48} height={48} alt={sign} />
+            }} width={38} height={38} alt={sign} />
             <NavLink to={"/Compare"}>
             <img
                 className="header-center-right-img2"
@@ -295,7 +302,7 @@ useEffect(()=>{
                 <div className="modal-sign-bottom">
                 </div>
                 <p className="modal-sign-bottom-padding"
-                onDoubleClick={() => setToken(null)}>Выйти</p>
+                onDoubleClick={() => handleLogOut()} >Выйти</p>
           </div>
           <div className="modal-korzinka" ref={overlaykorzinka}>
             <div className="modal-korzinka-top">
@@ -765,12 +772,12 @@ useEffect(()=>{
                             }}>Войти</button>
           </div>
           <nav ref={FooterNav} className="nav">
-            <a href="#" class="nav__link">
+            <NavLink to={"/"} className="nav__link">
               <i class="material-icons nav__icon">
                 <img src={header_nav__home} alt="" />
               </i>
               <span class="nav__text">Главная</span>
-            </a>
+            </NavLink>
             <a
               href="#"
               className="nav__link nav__link--active"
@@ -799,12 +806,13 @@ useEffect(()=>{
               </i>
               <span class="nav__text">Корзина</span>
             </a>
-            <a href="#" className="nav__link">
+            <span href="#" className="nav__link">
               <i class="material-icons nav__icon">
                 <img src={header_nav__heart} alt="" />
               </i>
-              <span class="nav__text">Избранное</span>
-            </a>
+              <NavLink className={"nav__text_nav"} to={"/Favorites"}>Избранное</NavLink>
+
+            </span>
             <a href="#" className="nav__link" ref={hamburgers}
                 onClick={() => {
                   Closehamburgers.current.style.display = "flex";
@@ -841,6 +849,7 @@ useEffect(()=>{
                             
               </div>
               <div className="header-center-right-media">
+              <NavLink to={"/Compare"}>
               <img
                 className="header-center-right-img5"
                 src={taroz}
@@ -848,13 +857,16 @@ useEffect(()=>{
                 height={20}
                 alt={taroz}
               />
-              <img
+              </NavLink>
+             <NavLink to={"/Favorites"}>
+             <img
                 className="header-center-right-img"
                 src={like}
                 width={20}
                 height={20}
                 alt={like}
               />
+             </NavLink>
               <img
                 className="header-center-right-img1"
                 onClick={() => {

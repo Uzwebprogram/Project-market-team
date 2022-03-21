@@ -1,0 +1,27 @@
+.carsuel-img{
+    margin:  0 auto;
+    max-width: 970px;
+    height: 508px;
+    border-radius: 8px;
+}
+@media only screen and (max-width : 716px){
+    .carsuel-img{
+        max-width: 716px;
+        margin:  0 auto;
+        height: 408px;
+    }
+}
+@media only screen and (max-width : 558px){
+    .carsuel-img{
+        max-width: 416px;
+        margin:  0 auto;
+        height: 308px;
+    }
+}
+@media only screen and (max-width : 450px){
+    .carsuel-img{
+        max-width: 366px;
+        margin:  0 auto;
+        height: 198px;
+    }
+}

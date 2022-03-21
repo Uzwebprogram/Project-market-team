@@ -5,6 +5,7 @@ function Compare() {
         <>
                 <Header/>
         <h1>Compare</h1>
+        <h2>hello</h2>
         </>
     )
 }
