@@ -1,0 +1,262 @@
+.contacts_container{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.top-navigation{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #070C11;
+}
+
+.top-navigation_title{
+    margin: 0;
+    padding: 0;
+    color: #070C11;
+    text-decoration: none;
+}
+.top-navigation_text{
+    margin: 0;
+    padding: 0;
+    color: #838688;
+}
+
+.top-navigation_img{
+    width: 13px;
+    height: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contacts_title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #070C11;
+}
+.contacts_section1{
+    display: flex;
+    margin-bottom: 30px;
+}
+.section1_left{
+    padding: 15px 30px;
+    margin-right: 20px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    background: #EDF2F6;
+    border-radius: 8px;
+}
+.section1_left-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.section1_list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 420px; */
+}
+.section1_list-item-content{
+    display: flex;
+    flex-direction: column;
+}
+.section1_list-item-adress{
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000000;
+}
+.section1_list-item-number{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #2A5275;
+}
+.section1_left-gmail{
+    margin-top: 30px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.section1_left-gmail-text{
+    margin: 0;
+    padding: 0;
+    margin-left: 18px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #2A5275;
+}
+.section1_left-bottom-rejim{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.section1_left-rejim-text{
+    margin: 0;
+    padding: 0;
+    margin-left: 13px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #838688;
+    
+}
+.section1_left-bottom-text{
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #070C11;
+}
+.section1_right{
+    border-radius: 8px;
+    width: 860px;
+    height: 512px;
+    background-color: #2A5275;
+}
+
+/* section2 */
+.contacts_section2{
+    margin-bottom: 80px;
+}
+.section2_title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #070C11;
+}
+.form_top{
+    display: flex;
+    
+}
+.from_top-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 310px;
+}
+.from_top-right{
+    
+}
+.from_top-left-input, .from_top-right{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #070C11;
+}
+.from_top-left-input1, .from_top-left-input2, .from_top-left-input3 {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #EAEAF0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.from_top-left-input3{
+    height: 120px;
+    width: 530px;
+}
+.form_bottom{
+    display: flex;
+}
+.form_bottom-btn{
+    padding: 13px 113px 14px 113px;
+    border: none;
+    width: 310px;
+    margin-right: 22px;
+    background: #4878A6;
+    border-radius: 5px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.form_bottom-right{
+    max-width: 607px;
+    display: flex;
+    align-items: center;
+}
+.form_bottom-checkBox{
+    margin-right: 7px;
+}
+.form_bottom-checkBoxL{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #070C11;
+    
+}
+
+
+
+@media only screen and (max-width : 1312px){
+    .section1_left-gmail-text{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width : 1312px){
+    .section1_left-gmail-text{
+        font-size: 16px;
+    }
+    .section1_list-item-adress{
+        font-size: 14px
+    }
+    .section1_list-item-number{
+        font-size: 22px;
+    }
+}
+
