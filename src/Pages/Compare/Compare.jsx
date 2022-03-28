@@ -46,22 +46,114 @@ function Compare() {
                         <div className="compare_cards cards">
                             <div className="cards__item">
                                 <button className="cards__delete">Убрать</button>
-                                <img src={CompareProduct} alt="товари" width={286} height={160} />
+                                <img className="cards__img" src={CompareProduct} alt="товари" width={286} height={160} />
                                 <p className="cards__text">Сигвеи</p>
                                 <p className="cards__productName">Гироскутер Smart Balance Well 6.5 Хип-Хоп (АКВАЗАЩИТА)</p>
-                                <p className="cards__price">5400 ₽</p>
+                                <p className="cards__price"><del>5400 ₽</del></p>
+                                <p className='cards__price1'>4990 ₽</p>
                                 <div className="cards__discount">
                                     <p className="cards__percentage">20%</p>
                                     <p className="cards__cost">– 1000 ₽</p>
                                 </div>
-                                <button className="cards__buyBtn">Купить в 1 клик</button>
-                                <button className="cards__basket">
-                                    <img src={Basket} alt="корзинка" width={21} height={20}/>
-                                </button>
+                                <div className="cards__btnWrapper">
+                                    <button className="cards__buyBtn">Купить в 1 клик</button>
+                                    <button className="cards__basket">
+                                        <img src={Basket} alt="корзинка" width={21} height={20}/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="cards__item--center">
+                                <button className="cards__delete">Убрать</button>
+                                <img className="cards__img" src={CompareProduct} alt="товари" width={286} height={160} />
+                                <p className="cards__text">Сигвеи</p>
+                                <p className="cards__productName">Гироскутер Smart Balance Well 6.5 Хип-Хоп (АКВАЗАЩИТА)</p>
+                                <p className="cards__price"><del>5400 ₽</del></p>
+                                <p className='cards__price1'>4990 ₽</p>
+                                <div className="cards__discount">
+                                    <p className="cards__percentage">20%</p>
+                                    <p className="cards__cost">– 1000 ₽</p>
+                                </div>
+                                <div className="cards__btnWrapper">
+                                    <button className="cards__buyBtn">Купить в 1 клик</button>
+                                    <button className="cards__basket">
+                                        <img src={Basket} alt="корзинка" width={21} height={20}/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="cards__item">
+                                <button className="cards__delete">Убрать</button>
+                                <img className="cards__img" src={CompareProduct} alt="товари" width={286} height={160} />
+                                <p className="cards__text">Сигвеи</p>
+                                <p className="cards__productName">Гироскутер Smart Balance Well 6.5 Хип-Хоп (АКВАЗАЩИТА)</p>
+                                <p className="cards__price"><del>5400 ₽</del></p>
+                                <p className='cards__price1'>4990 ₽</p>
+                                <div className="cards__discount">
+                                    <p className="cards__percentage">20%</p>
+                                    <p className="cards__cost">– 1000 ₽</p>
+                                </div>
+                                <div className="cards__btnWrapper">
+                                    <button className="cards__buyBtn">Купить в 1 клик</button>
+                                    <button className="cards__basket">
+                                        <img src={Basket} alt="корзинка" width={21} height={20}/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>{/*  end of hero */}
+
+                {/*  table */}
+                <div className="todoWrapper">
+                    <table id='table'>
+                        <thead>
+                            <tr className="table_row">
+                                <td className="table_data">Тип:</td>
+                                <td className="table_data">Сигвей</td>
+                                <td className="table_data">Сигвей</td>
+                                <td className="table_data">Сигвей</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className="table_row">
+                                <td className="table_data">Макс. скорость до (км/ч):</td>
+                                <td className="table_data">25</td>
+                                <td className="table_data">25</td>
+                                <td className="table_data">25</td>
+                            </tr>
+                        
+                            <tr className="table_row">
+                                <td className="table_data">Мощность двигателя</td>
+                                <td className="table_data">300</td>
+                                <td className="table_data">300</td>
+                                <td className="table_data">300</td>
+                            </tr>
+                        
+                            <tr className="table_row">
+                                <td className="table_data">Пробег на одном заряде</td>
+                                <td className="table_data">36</td>
+                                <td className="table_data">36</td>
+                                <td className="table_data">36</td>
+                            </tr>
+                        
+                            <tr className="table_row">
+                                <td className="table_data">Тип переднего тормоза</td>
+                                <td className="table_data">Дисковый механический</td>
+                                <td className="table_data">-</td>
+                                <td className="table_data">E-ABS</td>
+                            </tr>
+                       
+                            <tr className="table_row">
+                                <td className="table_data">Круиз-контроль</td>
+                                <td className="table_data">Есть</td>
+                                <td className="table_data">Есть</td>
+                                <td className="table_data">Есть</td>
+                            </tr>
+                        </tbody>
+                        
+
+                    </table>
                 </div>
+                
             </div>
         </>
     )

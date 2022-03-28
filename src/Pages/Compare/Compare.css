@@ -1,15 +1,21 @@
 /*  */
+p {
+    margin: 0;
+    padding: 0;
+}
 
 .compare_container{
     max-width: 1290px;
     margin: 0 auto;
     padding: 0 15px;
+    position:relative;
 }
 
 .compare_Navbar {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .compare_Link {
@@ -45,6 +51,17 @@
 }
 
 /* pagination buttons*/ 
+/* .compare_hero {
+    position: fixed;
+    z-index: 1000;
+    width: 80%;
+    top: 100;
+    right: 0;
+    background-color: #ffff;
+    border-bottom: 1px solid #070C11;; 
+    box-shadow: 0px 4px 6px rgba(42, 82, 117, 0.06);
+} */
+
 .compare_pagination {
     margin: 0;
     display: flex;
@@ -64,12 +81,20 @@
     margin-right: 20px;
 }
 
+.compare_prevBtn:active {
+    border: 1px solid grey;
+}
+
 .compare_nextBtn {
     display: block;
     padding: 18px 20px;
     border-radius: 50%;
     border: none;
     background-color: #EDF2F6;
+}
+
+.compare_nextBtn:active {
+    border: 1px solid grey;
 }
 
 /**all products select option */
@@ -109,10 +134,22 @@
 /**cards */
 .cards {
     display: flex;
+    margin-left: 85px;
+    margin-bottom: 30px;
 }
 
 .cards__item {
+    justify-content: center;
     border: 1px solid grey;
+    padding: 20px;
+}
+
+.cards__item--center {
+    border: 1px solid grey;
+    border-left:none;
+    border-right: none;
+    padding: 20px;
+    justify-content: center;
 }
 
 .cards__delete {
@@ -121,6 +158,164 @@
     display: block;
     color:red;
     margin: 0 auto;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.cards__delete:hover{
+    background-color: #EAEAF0;
+}
+
+.cards__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.cards__text {
+    margin: 0;
+    padding: 0;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #838688;
+    margin-bottom: 10px;
+    
+}
+
+
+.cards__productName {
+    font-family: "Exo 2";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 286px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cards__price {
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #838688;
+
+}
+
+.cards__price1 {
+    font-family: "Exo 2";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    color: #070C11;
+    margin-bottom: 8px;
+
+}
+
+.cards__discount {
+    display: flex;
+    background-color: #F15152;
+    width: 117px;
+    padding: 3px 7px 3px 4px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.cards__percentage {
+    background-color: #fff;
+    font-family: "Exo 2";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #070C11;
+    margin-right: 5px;
+    border-radius: 23px;
+    padding: 4px;
+}
+
+.cards__cost {
+    font-family: "Exo 2";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.cards__btnWrapper {
+    margin: 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.cards__buyBtn {
+    display: block;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #4878A6;
+    border:none;
+    background-color: #fff;
+    padding: 14px 54px;
+    border: 1px solid #4878A6;
+    border-radius: 4px;
+}
+
+.cards__buyBtn:hover {
+    color: #ffff;
+    background-color: #4878A6;
+}
+
+.cards__buyBtn:active {
+    color: #ffff;
+    background-color: #4878A6;
+}
+
+.cards__basket {
+    display: block;
+    background: #4878A6;
+    border-radius: 4px;
+    padding: 13px;
+    border: 1px solid #4878A6;
+}
+
+.cards__basket:active {
+    background-color: #2A5275;
+}
+
+.cards__basket:hover {
+    background-color: #2A5275;
+}
+
+
+/* table*/
+.todoWrapper{
+    /* max-width: 1300px; */
+    margin: 0 auto;
+}
+
+#table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table_row {
+    padding: 25px 20px;
+    background-color: red;
+    margin-right: 20px;
+    
+} 
+
+.table_data {
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
 }
 
 
