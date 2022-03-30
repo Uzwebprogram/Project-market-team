@@ -3,7 +3,9 @@
     max-width: 970px;
     height: 508px;
     border-radius: 8px;
+
     margin-bottom: 80px;
+
 }
 @media only screen and (max-width : 716px){
     .carsuel-img{

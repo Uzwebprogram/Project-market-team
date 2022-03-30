@@ -20,7 +20,11 @@
     padding: 0;
     margin-bottom: 40px;
 }
- .c-news-list > li{
+.c-news-list > li {
+    width: 40%;
+    height: 239px;
+}
+.c-news-list > li{
     width: 45%;
     height: 239px;
     margin: 10px 10px;
