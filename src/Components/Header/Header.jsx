@@ -135,12 +135,13 @@ try {
   console.log(err)
 }
 }
-<<<<<<< HEAD
-=======
 const handleLogOut = () =>{
   window.localStorage.removeItem("token")
 }
->>>>>>> 7dc570f165a34e1e40a740b94bb7a90016f8ae21
+
+const handleLogOut = () =>{
+  window.localStorage.removeItem("token")
+}
 
 useEffect(()=>{
 
