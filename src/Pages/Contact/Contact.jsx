@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom"
 import polygonImg from "../../Assets/Img/contacts_images/polygonImg.png"
 import clockImg from "../../Assets/Img/contacts_images/clockImg.png"
 import mailImg from "../../Assets/Img/contacts_images/mailImg.png"
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 function Contact() {
     return(
         <>
@@ -28,7 +29,10 @@ function Contact() {
                             <li className="section1_list-item">
                                 <div className="section1_list-item-content">
                                     <p className="section1_list-item-adress">СПб, Пр. Энгельса д.113 к.2</p>
+                                    <a href="tel:78125092343">
                                     <p className="section1_list-item-number">+7 (812) 509-23-43</p>
+
+                                    </a>
                                 </div>
                                 <img className="section1_left-item-img" src = {polygonImg}/>
                             </li>
@@ -60,9 +64,19 @@ function Contact() {
                             <p className="section1_left-bottom-text">Пн-вс с 10:00 до 21:00</p>
                         </div>
                     </div>
-                    <div className="section1_right">
-                        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25275557.77165248!2d31.438816324999998!3d39.3472853931632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sru!2s!4v1647674908734!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> */}
-                    </div>
+                    {/* <div className="section1_right"> */}
+                       <YMaps>
+                           <div className='ymaps'>
+                               <Map 
+                                defaultState={{
+                                   center: [41.325145, 69.245275],
+                                   zoom: 9,
+                               }}>
+                                    <Placemark geometry={[41.325145, 69.245275]} />
+                               </Map>
+                           </div>
+                       </YMaps>
+                    {/* </div> */}
                 </div>
                 <div className="contacts_section2">
                     <h2 className="section2_title">Связаться с нами</h2>
@@ -79,8 +93,8 @@ function Contact() {
                                 </div>
                             </div>
                             <div className="from_top-right">
-                                <label htmlFor="phoneNumber">Сообщение</label>
-                                <input className="from_top-left-input3" id="phoneNumbe" type={"text"} placeholder= {"Введите сообщение"} ></input>
+                                <label htmlFor="message">Сообщение</label>
+                                <textarea  className="from_top-left-input3" id="message" type={"text"} placeholder= {"Введите сообщение"} ></textarea>
                             </div>
                         </div>
                         <div className="form_bottom">
