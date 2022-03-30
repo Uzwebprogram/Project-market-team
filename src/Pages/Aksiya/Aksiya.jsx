@@ -4,7 +4,7 @@ function Aksiya() {
     return(
         <>
         <Header/>
-        <h1>AkSIYA</h1>
+        <h1>Aksiya</h1>
         </>
     )
 }
