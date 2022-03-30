@@ -136,9 +136,13 @@ try {
 }
 }
 
+
 const handleLogOut = () =>{
   window.localStorage.removeItem("token")
 }
+
+
+
 
 
 useEffect(()=>{
@@ -1050,8 +1054,7 @@ useEffect(()=>{
           hamburgerMedia.current.style.display = "none";
           signModal.current.style.display = "none";
           
-        }}
-      ></div>
+        }}></div>
     </>
   );
 }
