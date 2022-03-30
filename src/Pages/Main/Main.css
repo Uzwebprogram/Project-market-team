@@ -48,6 +48,7 @@
     flex-wrap: wrap;
 }
 .as-top-product-list-item{
+    position: relative;
     border: 1px solid rgb(209, 209, 209);
     width: 316px;
     padding: 20px;
@@ -80,6 +81,8 @@
     color: #838688;
 }
 .as-top-product-list-item-title{
+    width: 270px !important;
+    overflow: hidden;
     font-family: 'Exo 2';
     font-style: normal;
     font-weight: 400;
@@ -165,6 +168,7 @@
 
 }
 .as-top-product-list-item-center-bottoms{
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
 
@@ -196,6 +200,11 @@
     box-sizing: border-box;
     border-radius: 4px;
     background-color: white;
+}
+.as-top-product-list-item-center-bottom-zakaz{
+    position: absolute;
+
+    bottom: 10px;
 }
 .as-top-product-list-item-center-bottom-zakaz-button2{
     padding:12px 14px;
