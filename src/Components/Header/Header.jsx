@@ -139,10 +139,6 @@ const handleLogOut = () =>{
   window.localStorage.removeItem("token")
 }
 
-const handleLogOut = () =>{
-  window.localStorage.removeItem("token")
-}
-
 useEffect(()=>{
 
   if (token) {  
@@ -1052,8 +1048,7 @@ useEffect(()=>{
           hamburgerMedia.current.style.display = "none";
           signModal.current.style.display = "none";
           
-        }}
-      ></div>
+        }}></div>
     </>
   );
 }
