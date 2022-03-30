@@ -178,9 +178,7 @@
     margin-right: 20px;
     width: 310px;
 }
-.from_top-right{
-    
-}
+
 .from_top-left-input, .from_top-right{
     display: flex;
     flex-direction: column;
@@ -201,8 +199,9 @@
     border-radius: 5px;
 }
 .from_top-left-input3{
+        resize: none;
     height: 120px;
-    width: 530px;
+    width: 520px;
 }
 .form_bottom{
     display: flex;
@@ -243,6 +242,21 @@
 
 
 
+.ymaps{
+    width: 860px !important;
+    height: 512px !important;
+}
+.ymaps > div{
+    width: 100% !important;
+    height: 100% !important;
+}
+.ymaps-2-1-79-map, .ymaps-2-1-79-inner-panes, .ymaps-2-1-79-map-bg{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
 @media only screen and (max-width : 1312px){
     .section1_left-gmail-text{
         font-size: 18px;
@@ -257,6 +271,51 @@
     }
     .section1_list-item-number{
         font-size: 22px;
+    }
+}
+@media only screen and (max-width : 992px){
+    .section1_list-item-number{
+        font-size: 18px;
+    }
+    .section1_right{
+        width: 100%;
+    }
+    .from_top-left-input3{
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width : 596px){
+
+    .ymaps{
+        border-radius: 5px !important;
+        width: 100% !important;
+        margin-bottom: 20px;
+
+    }
+    .contacts_section1{
+        flex-direction: column-reverse;
+    }
+    .section1_left{
+        max-width: 100% !important;
+        width: 100%;
+    }
+    .from_top-left-input3{
+        width: 310px;
+    }
+    .form_top{
+        flex-direction: column;
+    }
+    .form_bottom {
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+    }
+    .from_top-left-input1{
+        width: 100%;
+    }
+    .form_bottom-btn{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
